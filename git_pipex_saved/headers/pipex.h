@@ -21,7 +21,6 @@
 # include "libft.h"
 
 void	ppx_exit(int err, const char *str, int *fd_pipe, int status);
-char	**ppx_setcmd(char **cmd, char *f, int fd, int *fdp);
 void	ppx_close(int fd, int *fd_pipe, int err, char **cmd);
 
 void	ppx_cmd1(char **av, char **env, int *fd_pipe);
