@@ -89,7 +89,7 @@ void	ppx_cmd1(char **av, char **env, int *fd_pipe)
 	char	*env_set;
 
 	fd = ppx_set_fd(av[1], fd_pipe);
-	cmd = ppx_setcmd(ft_split(av[2], ' '), ft_strdup(av[1]), fd, fd_pipe);
+	cmd = ft_split(av[2], ' ');
 	close(fd_pipe[0]);
 	dup2(fd, STDIN_FILENO);
 	close(fd);
